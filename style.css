@@ -69,6 +69,30 @@ p {
     margin: 0.5rem 0;
 }
 
+.main-footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(0, 255, 65, 0.3);
+    text-align: center;
+}
+
+.main-footer a {
+    color: #00FF41;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-size: 1rem;
+}
+
+.footer-links {
+    margin-top: 2rem;
+}
+
+.footer-links a {
+    color: #00FF41;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
 .cursor {
     display: inline-block;
     background-color: #00FF41;
@@ -79,6 +103,22 @@ p {
 @keyframes blink {
     from, to { background-color: transparent; }
     50% { background-color: #00FF41; }
+}
+
+/* Styles for content pages like privacy/terms */
+.content-page body {
+    overflow-y: auto; /* Allow vertical scroll */
+    display: block; /* Override flexbox centering */
+}
+
+.content-page .container {
+    margin: 5vh auto; /* Add some margin top/bottom */
+}
+
+.content-page h2 {
+    margin-top: 2rem;
+    border-bottom: 1px solid rgba(0, 255, 65, 0.3);
+    padding-bottom: 0.5rem;
 }
 
 /* Mobile adjustments */
